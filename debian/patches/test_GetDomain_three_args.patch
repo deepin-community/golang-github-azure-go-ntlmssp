@@ -1,0 +1,13 @@
+Index: golang-github-azure-go-ntlmssp/nlmp_test.go
+===================================================================
+--- golang-github-azure-go-ntlmssp.orig/nlmp_test.go	2022-11-09 16:24:24.892755584 +0100
++++ golang-github-azure-go-ntlmssp/nlmp_test.go	2022-11-09 16:24:39.268849362 +0100
+@@ -49,7 +49,7 @@
+ 	}
+ 
+ 	for _, table := range tables {
+-		tuser, tdomain := GetDomain(table.u)
++		tuser, tdomain, _ := GetDomain(table.u)
+ 		if tuser != table.xu {
+ 			t.Fatalf("username not correct, expected %v got %v", tuser, table.xu)
+ 		}
