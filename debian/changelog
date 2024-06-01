@@ -1,5 +1,54 @@
-template-repository (1.0-1) unstable; urgency=medium
+golang-github-azure-go-ntlmssp (0.0~git20220621.cb9428e-1) unstable; urgency=medium
 
-  * Initial release
+  * Team upload.
+  * New upstream snapshot.
+  * Standards-Version: 4.6.1
+  * debian patch test_GetDomain_three_args.patch fixes inconsistent
+    output signature in test using GetDomain()
 
- -- Tsic404 <liuheng@deepin.org>  Sat, 28 Jan 2023 13:46:49 +0800
+ -- Drew Parsons <dparsons@debian.org>  Wed, 09 Nov 2022 16:25:06 +0100
+
+golang-github-azure-go-ntlmssp (0.0~git20200615.6637195-1) unstable; urgency=medium
+
+  [ Alexandre Viau ]
+  * Point Vcs-* urls to salsa.debian.org.
+
+  [ Debian Janitor ]
+  * Bump debhelper from old 10 to 12.
+  * Set debhelper-compat version in Build-Depends.
+  * Change priority extra to priority optional.
+  * Set upstream metadata fields:
+    Bug-Database, Bug-Submit, Repository, Repository-Browse.
+
+  [ Shengjing Zhu ]
+  * Add uscan watch file
+  * New upstream version 0.0~git20200615.6637195
+  * Update maintainer and uploader address
+  * Add Rules-Requires-Root
+  * Bump debhelper-compat to 13
+  * Bump Standards-Version to 4.5.0
+  * Stop building markdown file
+
+ -- Shengjing Zhu <zhsj@debian.org>  Wed, 15 Jul 2020 02:29:24 +0800
+
+golang-github-azure-go-ntlmssp (0.0~git20170206.0.29affce-1) unstable; urgency=medium
+
+  * Adopt package (Closes: #865325).
+  * New snapshot release.
+  * d/compat: bump to v10.
+  * d/control:
+    + Bump Standards-Version to 4.0.0.
+    + Bump dependency of debhelper to 10.
+    + Add autopkgtest-pkg-go Testsuite.
+  * d/copyright:
+    + Change format url to https.
+    + Add myself to copyright holder.
+  * Add pseudo d/watch.
+
+ -- Shengjing Zhu <i@zhsj.me>  Thu, 27 Jul 2017 18:55:50 +0800
+
+golang-github-azure-go-ntlmssp (0.0~git20160412.e0b63eb-1) unstable; urgency=medium
+
+  * Initial release (Closes: #823793).
+
+ -- Daniel Stender <stender@debian.org>  Mon, 09 May 2016 08:17:04 +0200
